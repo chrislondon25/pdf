@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking.com</title>
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://xx.bstatic.com/static/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family:
+          BlinkMacSystemFont,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      .header {
+        background: #003b95;
+        height: 70px;
+        color: #fff;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 6rem;
+      }
+      .header img {
+        height: 50px;
+      }
+      .content {
+        margin: 0 auto;
+        width: 400px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .heading {
+        margin-top: 20px;
+      }
+      .disc {
+        font-size: 14px;
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .header {
+          padding: 0px 15px;
+        }
+        .header img {
+          display: none;
+        }
+        .content {
+          width: 100%;
+          padding: 0 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h3>Booking.com</h3>
+      <img
+        src="https://d3b60hoik05uy.cloudfront.net/assets/Screenshot 2025-09-13 042256.png"
+        alt=""
+      />
+    </div>
+    <div class="content">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpywGha_CBsk7y2aktFPySHoYuvNao0I-a7Q&s"
+        height="60"
+      />
+      <h3 class="heading">Booking Cancelled!</h3>
+      <p class="disc">The booking request has been cancelled by the guest</p>
+    </div>
+  </body>
+</html>
