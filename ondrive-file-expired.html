@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Expired - OneDrive</title>
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <!-- Google Fonts for Segoe UI alternative -->
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and Base Styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          "Segoe UI",
+          -apple-system,
+          Roboto,
+          "Noto Sans",
+          sans-serif;
+        background-color: #f3f2f1; /* OneDrive light gray background */
+        color: #323130; /* Microsoft dark gray text */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* Header Styles - Left Aligned with Brand Background */
+      .onedrive-header {
+        background-color: #0f6cbd; /* Microsoft Brand Blue */
+        height: 50px;
+        width: 100%;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .header-container {
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-start; /* Aligns content to the left */
+        align-items: center;
+      }
+
+      .logo-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .od-logo {
+        width: 24px;
+        height: 24px;
+      }
+
+      .brand-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff; /* White text for contrast */
+      }
+
+      /* Main Content Styles */
+      .main-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .message-card {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 2px; /* OneDrive uses sharp, minimal borders */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        max-width: 480px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .icon-container {
+        margin-bottom: 20px;
+      }
+
+      .warning-icon {
+        width: 64px;
+        height: 64px;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #323130;
+        margin-bottom: 12px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        color: #605e5c;
+        margin-bottom: 8px;
+        line-height: 1.5;
+      }
+
+      .action-text {
+        font-size: 14px;
+        color: #323130;
+        margin-bottom: 28px;
+        line-height: 1.5;
+      }
+
+      /* Microsoft UI Style Button */
+      .primary-btn {
+        background-color: #0f6cbd;
+        color: #ffffff;
+        border: none;
+        padding: 8px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: background-color 0.1s ease;
+      }
+
+      .primary-btn:hover {
+        background-color: #115ea3;
+      }
+
+      .primary-btn:active {
+        background-color: #0f4c81;
+      }
+
+      /* Footer Styles */
+      .onedrive-footer {
+        background-color: #ffffff;
+        border-top: 1px solid #edebe9;
+        font-size: 12px;
+        color: #605e5c;
+        padding: 16px 0;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .footer-right {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .footer-right a {
+        color: #605e5c;
+        text-decoration: none;
+      }
+
+      .footer-right a:hover {
+        text-decoration: underline;
+        color: #323130;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 480px) {
+        .message-card {
+          padding: 24px;
+        }
+
+        .footer-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="onedrive-header">
+      <div class="header-container">
+        <div class="logo-wrapper">
+          <!-- SVG Cloud Logo in white -->
+          <svg
+            class="od-logo"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://w3.org"
+          >
+            <path
+              d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+              fill="#ffffff"
+            />
+          </svg>
+          <span class="brand-name">OneDrive</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <div class="message-card">
+        <!-- Warning Icon -->
+        <div class="icon-container">
+          <svg
+            class="warning-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://w3.org"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 12 10 12-4.48 12-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+              fill="#d83b01"
+            />
+          </svg>
+        </div>
+
+        <!-- Contextual Error Message -->
+        <h1>This link has expired</h1>
+        <p class="subtitle">
+          The file you are looking for is no longer available at this address.
+        </p>
+        <p class="action-text">
+          Please contact the sender and ask them to share the file or generate a
+          new link.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="onedrive-footer">
+      <div class="footer-container">
+        <span class="footer-link">Microsoft</span>
+        <div class="footer-right">
+          <a href="#">Privacy & cookies</a>
+          <a href="#">Terms of use</a>
+          <span>&copy; 2026 Microsoft</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
