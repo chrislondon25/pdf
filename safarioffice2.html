@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Requests / New - SafariOffice</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://app.safarioffice.com/favicon-32x32.png"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+      body {
+        margin: 0;
+        /* font-family: Arial, sans-serif; */
+      }
+
+      /* Top Bar */
+      .topbar {
+        background: #000;
+        color: #fff;
+        padding: 14px 30px;
+        display: flex;
+        align-items: center;
+      }
+      .logo-area {
+        display: flex;
+        align-items: center;
+
+        gap: 5px;
+        margin-right: 5px;
+      }
+
+      .logo {
+        font-weight: 400;
+        font-size: 18px;
+      }
+
+      .logo span:first-child {
+        font-weight: 700;
+      }
+      .logo span:last-child {
+        color: #25c025;
+        font-size: 30px;
+        line-height: 0%;
+      }
+
+      a {
+        color: #25c025;
+        text-decoration: none;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #16b408;
+        padding: 3px;
+        line-height: 0.8125rem;
+        border-radius: 0.1875rem;
+        font-size: 0.6875rem;
+        transform: skewX(-15deg);
+      }
+      .badge span {
+        font-weight: 600;
+      }
+
+      /* Main Section */
+      .hero {
+        text-align: center;
+        /* padding: 60px 20px; */
+
+        margin-top: 50px;
+        margin-left: 1.25rem;
+        border: 1px solid #c8c8c8;
+        border-left: 0;
+        border-right: 0;
+        height: 12.0625rem;
+        position: relative;
+        /* padding: 0; */
+      }
+
+      .hero img {
+        max-width: 200px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .hero h1 {
+        margin: 10px 0;
+        font-size: 32px;
+
+        margin-top: 0.3125rem;
+        font-size: 1.625rem;
+        color: #16b408;
+        font-weight: 900;
+        margin-bottom: 0;
+        line-height: 1.75rem;
+      }
+
+      .hero p {
+        color: #555;
+        font-size: 18px;
+        max-width: 600px;
+        margin: 0 auto;
+
+        margin-top: 0.625rem;
+        padding: 0;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <a
+        href="https://app.safarioffice.com"
+        style="
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div class="logo-area">
+          <div>
+            <img
+              src="https://www.safarioffice.com/wp/wp-content/themes/safarioffice/images/logo.svg"
+              alt="SafariOffice"
+            />
+          </div>
+          <div class="logo">Safari<span>Office</span><span>.</span></div>
+        </div>
+        <div class="badge">For <span>Tour Operators / Agents</span></div>
+      </a>
+    </div>
+
+    <section class="hero">
+      <img
+        src="https://app.safarioffice.com/icon/32/green/requests.svg"
+        alt="Sample Image"
+      />
+      <h1>Request Canceled.</h1>
+      <p>
+        There are currently no New Request in your Inbox.
+        <br />
+        You can start a new one by '<a
+          style="color: #16b408; text-decoration: none"
+          href="https://app.safarioffice.com/requests#add"
+          >adding a new request</a
+        >'.
+      </p>
+    </section>
+  </body>
+</html>
